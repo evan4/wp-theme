@@ -1,0 +1,21 @@
+%micro-clearfix{
+	&:before,
+	&:after {
+		content:" ";
+		display:table;
+	}
+	&:after {
+		clear:both;
+	}
+}
+
+@function calculateRem($size) {
+  $remSize: $size / 16px;
+  @return #{$remSize}rem;
+}
+@mixin fontSize($size) {
+  font-size: $size; //Fallback in px
+  font-size: calculateRem($size);
+}
+
+//@include fontSize(13px); rem

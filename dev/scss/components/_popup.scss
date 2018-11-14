@@ -1,0 +1,51 @@
+.popup {
+  &__caption {
+    margin: 0 0 20px;
+    @include fontSize(36px);
+    font-weight: normal;
+  }
+  &__sub {
+    margin: 0 0 40px;
+    font-weight: 300;
+  }
+  &__input {
+    height: 60px;
+    line-height: 60px;
+    width: 98%;
+    margin-bottom: 10px;
+    background-color: transparent;
+    border: 1px solid #f3f3f3;
+    @include fontSize(18px);
+    text-indent: 24px;
+    font-weight: 300;
+    border-radius: 30px;
+  }
+  &__text {
+    width: 100%;
+    border: 0;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #b2b2b2;
+    background-color: transparent;
+    padding-left: 24px;
+    @include fontSize(19px);
+    font-style: italic;
+  }
+  &__submit {
+    @extend .btn;
+    width: 98%;
+    cursor: pointer;
+    border: 0;
+    height: 60px;
+    @include fontSize(18px);
+    line-height: 1;
+  }
+  .wpcf7{
+    padding-bottom: 30px;
+  }
+  .wpcf7-response-output {
+    clear: both;
+  }
+  &__block{
+    clear: both;
+  }
+}

@@ -1,0 +1,49 @@
+.repair{
+    &__left{
+        li{
+            display: inline-block;
+            margin-bottom: 10px;
+            &:not(:last-child){
+                margin-right: 10%;
+            }
+        }
+        li:first-child{
+            img{
+                width: 31px;
+            }
+        }
+        li:nth-child(2){
+            img{
+                width: 49px;
+            }
+        }
+        li:nth-child(3){
+            img{
+                width: 49px;
+            }
+        }
+        span{
+            display: block;
+            margin-top: 22px;
+            color: #484848;
+            @include fontSize(22px);
+        }
+    }
+    &__wrap{
+        height: 50px;
+        &:before{
+            content: ' ';
+            display: inline-block;
+            vertical-align: middle;
+            height: 100%;
+        }
+    }
+    &__subcaption{
+        margin-bottom: 37px;
+    }
+    &__right{
+        li{
+            margin-bottom: 10px;
+        }
+    }
+}

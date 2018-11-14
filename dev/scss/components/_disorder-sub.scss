@@ -1,0 +1,16 @@
+.disorder-sub{
+  margin-bottom: 20px;
+  @include fontSize(16px);
+  padding-left: 6%;
+  line-height: 1.4;
+  &__item{
+    &:before{
+      content: "\f0c8";
+      font-family: 'FontAwesome';
+      @include fontSize(7px);
+      display: inline-block;
+      padding-top: 9px;
+      padding-right: 10px;
+    }
+  }
+}

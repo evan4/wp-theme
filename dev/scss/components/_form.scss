@@ -1,0 +1,70 @@
+.form{
+    &__radio{
+        input{
+            display: none;
+            &:checked + span {
+                background: $color-violet;
+                color: #fff;
+            }
+            & + span{
+                display: block;
+                padding: 5px 10px;
+                margin-bottom: 17px;
+                margin-right: 5px;
+                background: #e7e7e7;
+                text-decoration: none;
+                border-radius: 15px 5px 5px 15px;
+                border-color: transparent;
+                @include fontSize(22px);
+                color: #484848;
+                cursor: pointer;
+            }
+        }
+    }
+    &__checkbox{
+        input{
+            display: none;
+            &:checked + span {
+                background: $color-violet;
+                color: #fff;
+            }
+            & + span{
+                display: block;
+                padding: 5px 10px;
+                margin-bottom: 17px;
+                margin-right: 5px;
+                background: #e7e7e7;
+                text-decoration: none;
+                border-radius: 15px 5px 5px 15px;
+                border-color: transparent;
+                @include fontSize(22px);
+                color: #484848;
+                cursor: pointer;
+            }
+        }
+    }
+    &__text{
+        margin-left: 2%;
+        width: 98%;
+        border-radius: 30px;
+        padding: 20px 30px;
+        min-height: 60px;
+        border: 1px solid #f3f3f3;
+    }
+    &__input{
+        width: 100%;
+        margin-bottom: 10px;
+        border-radius: 30px;
+        padding: 20px 30px;
+        min-height: 60px;
+        border: 1px solid #f3f3f3;
+    }
+    &__submit{
+        @extend .btn;
+        border: 0;
+        max-width: 310px;
+        float: left;
+        padding: 20px 30px !important;
+        margin-left: 2%;
+    }
+}

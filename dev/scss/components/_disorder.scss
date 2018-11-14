@@ -1,0 +1,44 @@
+.disorder{
+    background: $bg-violet;
+    &__list{
+        i{
+            margin-right: 22px;
+            color: $color-violet;
+            @include fontSize(20px);
+            display: inline-block;
+            vertical-align: middle;
+        }
+        img{
+            margin-right: 22px;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        span{
+            vertical-align: middle;
+            color: #484848;
+            @include fontSize(19px);
+        }
+    }
+  &__parent{
+    p{
+      display: inline-block;
+      padding: 5px 10px;
+      margin-top: 0;
+      margin-bottom: 14px;
+      margin-right: 5px;
+      background: #e7e7e7;
+      text-decoration: none;
+      border-radius: 15px 5px 5px 15px;
+      cursor: pointer;
+      &:hover{
+        background: #ede9f2;
+      }
+    }
+    &.disorder__item_active+li{
+      display: block;
+    }
+  }
+  &__item{
+    display: none;
+  }
+}

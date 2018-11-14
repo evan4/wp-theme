@@ -1,0 +1,104 @@
+html {
+  min-height: 100%;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  margin: 0;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  flex: auto;
+  font-family: 'Proxima Nova', sans-serif;
+  background: #ffffff;
+}
+
+.wrap {
+  position: relative;
+  max-width: 1143px;
+  min-width: 320px;
+  margin: 0 auto;
+  @extend %micro-clearfix;
+}
+
+.main {
+  width: 100%;
+  margin: auto;
+  flex-grow: 1;
+  box-sizing: border-box;
+}
+
+.content {
+  min-height: 100%;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.caption {
+  margin: 0;
+  color: $color-violet;
+  font-weight: normal;
+  a {
+    color: inherit;
+  }
+}
+
+.subcaption {
+  margin: 0;
+}
+
+/* text-based popup styling */
+.white-popup {
+  position: relative;
+  background: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  width: auto;
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+.btn {
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
+  color: #484848;
+  border-radius: 35px;
+  text-decoration: none;
+  background-color: $color-yellow;
+
+  &_transparent {
+    border-radius: 30px;
+    margin-bottom: 17px;
+    padding: 18px 35px;
+    background-color: transparent;
+    border: 2px solid #a870cb;
+  }
+}
+
+.close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  display: block;
+  width: 23px;
+  height: 23px;
+  border: 1px solid #000;
+  border-radius: 50%;
+  text-align: center;
+  cursor: pointer;
+}
+
+.wpcf7 {
+  overflow: hidden;
+}

@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+/*!
+ * Theme Name: asu
+ * Author: Ivan Orlov
+ * Author URI: http://storenet.altervista.org/
+ * Description: Тема для сайта СургутАСУ
+ * Version: 1.0.0
+ * License: GNU General Public License v2 or later
+ * License URI: http://www.gnu.org/licenses/gpl-2.0.html
+ */
+
+//Настройки
+@import "setting/variable";
+@import "setting/normalize";
+@import "setting/my-reset";
+
+@import "mixin";
+
+@import "fonts";
+@import "general";
+
+// плагины
+@import "libs/magnific/magnific";
+@import "libs/FontAwesome/font-awesome";
+
+@import "components/header";
+@import "components/main-menu";
+
+@import "components/popup";
+@import "components/services-list";
+@import "components/repair";
+@import "components/disorder";
+@import "components/disorder-sub";
+@import "components/disorder-bottom";
+@import "components/contacts";
+@import "components/costing";
+@import "components/form";
+@import "components/map";
+
+@import "components/footer";
+
+@import "media";

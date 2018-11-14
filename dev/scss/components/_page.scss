@@ -1,0 +1,124 @@
+.page{
+	position: relative;
+	padding: 50px 0 100px 0;
+	font-family: 'PF BeauSans Pro';
+	color: #606060;
+	@include fontSize(14px);
+	&_colleagues{
+		padding-bottom: 30px;
+	}
+	&__inner{
+		margin-left: 3%;
+	}
+	.post{
+		padding: 34px 4% 0;
+	}
+	&__caption{
+		margin-bottom: 32px;
+		&_mod{
+			padding: 0;
+			border: 0;
+			@include fontSize(20px);
+		}
+	}
+	&__contact{
+		max-width: 300px;
+		margin: 0 4% 22px;
+		padding: 0 0 19px 0;
+		border-bottom: 1px dotted #d9d9d9;
+		span{
+			display: inline-block;
+			padding-right: 12px;
+			vertical-align: middle;
+			@include fontSize(16px);
+		}
+		a{
+			vertical-align: middle;
+			color: inherit;
+			text-decoration: none;
+		}
+	}
+	&__title{
+		font-family: 'Merriweather';
+		font-weight: bold;
+		@include fontSize(19px);
+		color: #374248;
+		span{
+			margin-right: 2%;
+			padding: 5px;
+			background: #dbdbdb;
+			font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
+			@include fontSize(11px);
+			vertical-align: top;
+		}
+	}
+	&__back{
+		display: block;
+		margin-top: 50px;
+		text-align: center;
+		font-family: 'Merriweather';
+		font-weight: bold;
+		@include fontSize(12px);
+		color: #374248;
+	}
+	&__colleagues{
+		font-family: 'Merriweather';
+		padding: 0 2%;
+		p{
+			line-height: 1.5;
+			@include fontSize(12px);
+		}
+	}
+	&__place{
+		float: left;
+		width: 273px;
+		height: 173px;
+		margin: 10px 2% 10px 0;
+		background: #dbdbdb;
+	}
+	&__list{
+		position: relative;
+		margin-top: 40px;
+		z-index: 2;
+	}
+	&__sub{
+		margin-top: 35px;
+		text-align: center;
+		color: #374248;
+		line-height: 1.5;
+	}
+	&__name{
+		margin-bottom: 17px;
+		font-weight: bold;
+		@include fontSize(16px);
+	}
+	&__about{
+		margin-bottom: 20px;
+		@include fontSize(13px);
+	}
+	&__motto{
+		font-weight: 300;
+		font-style: italic;
+		@include fontSize(13px);
+	}
+	&__gray{
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		height: 250px;
+		background: #dbdbdb;
+	}
+	&__gallery{
+		padding: 0 1%;
+		display: inline-block;
+		margin: 10px;
+	}
+	&__item{
+		margin-bottom: 10px;
+		img{
+			display: block;
+			margin: auto;
+		}
+
+	}
+}

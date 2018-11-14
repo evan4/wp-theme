@@ -1,0 +1,23 @@
+.services-list{
+    background: $bg-violet;
+    &__list{
+        li{
+            display: inline-block;
+            vertical-align: middle;
+            i{
+                display: inline-block;
+                margin-right: 28px;
+                @include fontSize(60px);
+                color: #6d00b1;
+                vertical-align: middle;
+            }
+            span{
+                width: 166px;
+                @include fontSize(22px);
+                font-weight: 300;
+                color: #544c59;
+                vertical-align: middle;
+            }
+        }
+    }
+}

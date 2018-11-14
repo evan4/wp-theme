@@ -1,0 +1,17 @@
+.slider{
+
+	overflow: hidden;
+
+	&__item{
+		position: relative;
+		padding: 40px 1.5%;
+		background: rgba(243,243,243, .9);
+	}
+	&__caption{
+		text-align: left;
+		padding: 0;
+	}
+	&__btn{
+		position: absolute;
+	}
+}

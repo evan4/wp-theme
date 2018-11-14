@@ -1,0 +1,415 @@
+@media (min-width: 320px) {
+  .wrap {
+    padding: 0 1%;
+  }
+  .mobile {
+    color: #fff;
+    display: block;
+    float: right;
+    margin: 20px;
+    @include fontSize(20px);
+  }
+  .btn {
+    padding: 25px 20px;
+    @include fontSize(14px);
+    &_transparent {
+      border-radius: 30px;
+      padding: 18px 35px;
+    }
+  }
+  .header {
+    text-align: center;
+    &__caption {
+      margin-bottom: 15px;
+      margin-top: 15px;
+      @include fontSize(25px);
+    }
+    &__desc {
+      margin-bottom: 15px;
+      @include fontSize(20px);
+    }
+    &__right {
+      margin-top: 10px;
+    }
+  }
+  .popup {
+    &__sub {
+      @include fontSize(16px);
+    }
+  }
+  .services-list {
+    padding: 60px 0;
+    &__list {
+      li {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+    }
+  }
+  .repair {
+    text-align: center;
+    padding: 10px;
+  }
+  .disorder {
+    padding: 15px 0;
+    &__list {
+      margin: 10px 0;
+    }
+  }
+  .contacts {
+    padding: 15px 0;
+    &__form {
+      margin-bottom: 10px;
+    }
+    &__sub {
+      @include fontSize(16px);
+    }
+    &__tel {
+      @include fontSize(22px);
+    }
+  }
+  .costing {
+    padding: 15px 0;
+  }
+  .caption {
+    @include fontSize(22px);
+  }
+  .subcaption {
+    padding: 15px 0 0 0;
+    @include fontSize(16px);
+  }
+  .footer {
+    &__copy {
+      display: block;
+    }
+  }
+  .map {
+    &__item{
+      width: 100%;
+    }
+  }
+}
+
+@media (min-width: 400px) {
+  .header {
+    min-height: 854px;
+    &__man {
+      position: absolute;
+      background: url($img+ 'man.png') no-repeat;
+      width: 1139px;
+      height: 831px;
+      top: 190px;
+      left: 0;
+    }
+    &__trinagle {
+      top: 742px;
+      left: 10%;
+      position: absolute;
+      width: 220px;
+      height: 220px;
+      background: url($img+ 'big-triangle.png') no-repeat;
+      &_map {
+        top: 380px !important;
+        left: 23% !important;
+        z-index: 2;
+      }
+    }
+  }
+  .main-menu {
+    li {
+      display: inline-block;
+    }
+    li:not(:last-child) {
+      margin-right: 2%;
+    }
+  }
+  .popup {
+    &__bigtriangle {
+      position: absolute;
+      bottom: -100px;
+      left: 100px;
+      width: 169px;
+      height: 169px;
+      background: url($img+ 'bigpopup-triangle.png') no-repeat;
+    }
+    &__triangles {
+      z-index: -1;
+      overflow: hidden;
+      position: absolute;
+      right: 60px;
+      width: 92px;
+      height: 54px;
+      background: url($img+ 'popup-triangles.png') no-repeat;
+    }
+  }
+  .costing {
+    .text-275 {
+      float: left;
+      margin-right: 3%;
+    }
+
+  }
+  .disorder-sub {
+    &__number{
+      display: block;
+    }
+  }
+
+  .footer {
+    .main-menu {
+      margin-top: 0;
+    }
+  }
+}
+@media (min-width: 500px) {
+  .disorder-sub {
+    &__item{
+      overflow: hidden;
+      width: 100%;
+      flex-direction: row;
+      display: flex;
+    }
+    &__text {
+      padding-right: 5px;
+      display: inline;
+    }
+    &__dots{
+      flex-direction: row;
+      display: flex;
+      flex: 1;
+      span{
+        display: inline;
+        border-top-style: dotted;
+        border-top-width: 2px;
+        max-height: 2px;
+        margin-top: 15px;
+        flex: 1;
+      }
+    }
+    &__number{
+      display: inline;
+      padding: 0 0.33em 0 0;
+      text-align: right;
+      float: right;
+    }
+  }
+}
+@media (min-width: 768px) {
+  .wrap {
+    padding: 0;
+  }
+  .mobile {
+    display: none;
+  }
+  .mobile-main {
+    display: block;
+  }
+  .caption {
+    @include fontSize(36px);
+  }
+  .subcaption {
+    @include fontSize(22px);
+  }
+  .popup {
+    &__sub {
+      @include fontSize(22px);
+    }
+    &__input {
+      float: left;
+    }
+    &__submit {
+      float: right;
+      width: 31%;
+    }
+    .wpcf7-form-control-wrap {
+      float: left;
+      width: 48%;
+      margin-left: 2%;
+    }
+  }
+
+  .btn {
+    padding: 25px 70px;
+    @include fontSize(18px);
+    &_transparent {
+      border-radius: 30px;
+      padding: 18px 35px;
+    }
+  }
+  .header {
+    text-align: left;
+    &__logo {
+      float: left;
+    }
+    &__right {
+      margin-top: 70px;
+    }
+    &__caption {
+      max-width: 800px;
+      margin-bottom: 32px;
+      margin-top: 135px;
+      @include fontSize(60px);
+    }
+    &__desc {
+      max-width: 610px;
+      margin-bottom: 45px;
+      @include fontSize(30px);
+    }
+    &__man {
+      top: 90px;
+      left: 33%;
+    }
+    &__trinagle {
+      top: 742px;
+      left: 50%;
+      &_map {
+        left: 23% !important;
+      }
+    }
+  }
+  .main-menu {
+    float: right;
+    margin-top: 30px;
+    width: 50%;
+  }
+  .services-list {
+    padding: 90px 0;
+    &__list {
+      margin: 0 1%;
+      li {
+        float: left;
+        width: 45%;
+        margin-bottom: 20px;
+        &:not(:last-child) {
+          margin-right: 4%;
+        }
+        i {
+          float: left;
+          margin-top: -6px;
+        }
+        span {
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+  .repair {
+    padding: 47px 0 72px;
+    text-align: left;
+    &__left {
+      float: left;
+      width: 55%;
+      border-right: 1px solid #a5a5a5;
+    }
+    &__right {
+      float: right;
+      width: 42%;
+      li {
+        display: inline-block;
+        margin: 0 1% 10px 0;
+      }
+    }
+  }
+  .disorder {
+    padding: 68px 0;
+    &__list {
+      margin: 48px 0 40px;
+    }
+  }
+  .costing {
+    padding: 79px 0;
+    &__img {
+      float: left;
+    }
+    &__head {
+      float: left;
+      margin-top: -25px;
+      margin-left: 3%;
+    }
+    .wpcf7 {
+      margin-left: 2%;
+    }
+  }
+  .contacts {
+    padding: 75px 0;
+    &__form {
+      margin-bottom: 90px;
+    }
+    &__sub {
+      @include fontSize(30px);
+    }
+    &__tel {
+      @include fontSize(72px);
+    }
+    &__caption {
+      @include fontSize(48px);
+    }
+  }
+  .map {
+    padding-top: 30px;
+    background-image: url($img+ 'map-bg.png');
+    background-position: 10% top;
+    background-repeat: no-repeat;
+    &__item{
+      width: 48%;
+      margin-right: 1%;
+    }
+  }
+  .footer {
+    padding-top: 20px;
+    .main-menu {
+      float: right;
+      margin-left: 17%;
+      margin-top: 0;
+    }
+    &__copy {
+      float: left;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .mobile-main {
+    display: none;
+  }
+  .header {
+    &__right {
+      float: right;
+      margin-top: -74px;
+    }
+    &__man {
+      top: 54px;
+      left: 33%;
+    }
+    &__trinagle {
+      top: 742px;
+      left: 78%;
+    }
+  }
+  .main-menu {
+    float: none;
+    margin: 21px auto;
+    width: 38%;
+    li:not(:last-child) {
+      margin-right: 5%;
+    }
+  }
+  .popup {
+    .wpcf7-form-control-wrap {
+      width: 31%;
+    }
+  }
+  .services-list {
+    &__list {
+      li {
+        width: 22%;
+      }
+    }
+  }
+  .map {
+    &__item{
+      width: 32%;
+      margin-right: 1%;
+    }
+  }
+}
